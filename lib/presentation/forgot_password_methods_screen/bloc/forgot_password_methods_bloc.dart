@@ -1,0 +1,5 @@
+import 'package:equatable/equatable.dart';import 'package:flutter/material.dart';import '/core/app_export.dart';import '../models/listiconlyboldchat_item_model.dart';import 'package:ranjeet_social_media/presentation/forgot_password_methods_screen/models/forgot_password_methods_model.dart';part 'forgot_password_methods_event.dart';part 'forgot_password_methods_state.dart';class ForgotPasswordMethodsBloc extends Bloc<ForgotPasswordMethodsEvent, ForgotPasswordMethodsState> {ForgotPasswordMethodsBloc(ForgotPasswordMethodsState initialState) : super(initialState) { on<ForgotPasswordMethodsInitialEvent>(_onInitialize); }
+
+_onInitialize(ForgotPasswordMethodsInitialEvent event, Emitter<ForgotPasswordMethodsState> emit, ) async  { emit(state.copyWith(forgotPasswordMethodsModelObj: state.forgotPasswordMethodsModelObj?.copyWith(listiconlyboldchatItemList: fillListiconlyboldchatItemList()))); } 
+List<ListiconlyboldchatItemModel> fillListiconlyboldchatItemList() { return List.generate(2, (index) => ListiconlyboldchatItemModel()); } 
+ }

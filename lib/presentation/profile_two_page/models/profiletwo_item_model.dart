@@ -1,0 +1,3 @@
+class ProfiletwoItemModel {String? id = "";
+
+ }

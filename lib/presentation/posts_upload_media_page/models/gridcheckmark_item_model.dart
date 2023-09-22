@@ -1,0 +1,3 @@
+class GridcheckmarkItemModel {String? id = "";
+
+ }

@@ -1,0 +1,3 @@
+class GridItemModel {String? id = "";
+
+ }

@@ -1,0 +1,3 @@
+class WeeklyrankingItemModel {String? id = "";
+
+ }
