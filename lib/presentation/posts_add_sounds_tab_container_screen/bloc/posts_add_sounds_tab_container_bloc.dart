@@ -1,0 +1,4 @@
+import 'package:equatable/equatable.dart';import 'package:flutter/material.dart';import '/core/app_export.dart';import 'package:ranjeet_social_media/presentation/posts_add_sounds_tab_container_screen/models/posts_add_sounds_tab_container_model.dart';part 'posts_add_sounds_tab_container_event.dart';part 'posts_add_sounds_tab_container_state.dart';class PostsAddSoundsTabContainerBloc extends Bloc<PostsAddSoundsTabContainerEvent, PostsAddSoundsTabContainerState> {PostsAddSoundsTabContainerBloc(PostsAddSoundsTabContainerState initialState) : super(initialState) { on<PostsAddSoundsTabContainerInitialEvent>(_onInitialize); }
+
+_onInitialize(PostsAddSoundsTabContainerInitialEvent event, Emitter<PostsAddSoundsTabContainerState> emit, ) async  { emit(state.copyWith(stateDefaultSearchController: TextEditingController())); } 
+ }
